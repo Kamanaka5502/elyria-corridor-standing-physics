@@ -7,7 +7,7 @@ Copyright (c) 2026 **Samantha Revita** and **Terry Snyder**. All rights reserved
 ## Current status
 
 ```text
-STATUS: PUBLIC_PROOF_SURFACE_INITIALIZED
+STATUS: PUBLIC_PROOF_SURFACE_ACTIVE
 CATEGORY: corridor standing physics
 TARGET REVIEWERS: financial settlement, regulated data, AI action, energy systems, critical corridors
 PROTECTION POSTURE: protected public proof surface / not open source
@@ -19,7 +19,7 @@ This repository formalizes high-consequence transfer corridors as lawful standin
 ## What is complete
 
 ```text
-README front door with badges
+README front door with badges and proof badge
 front-facing corridor visual
 protected scope notice
 protected license
@@ -32,7 +32,34 @@ commercial access posture
 corridor standing law
 source anchors
 scenario index
+reviewer brief
 project status
+proof run guide
+public-safe corridor standing proof engine
+financial settlement corridor proof
+corridor CLI
+corridor deterministic tests
+GitHub Actions proof workflow
+financial settlement example artifact
+```
+
+## Executable proof surface
+
+```text
+CORRIDOR_STANDING_ENGINE.py
+corridor_cli.py
+test_corridor_standing.py
+.github/workflows/proof.yml
+examples/financial_settlement_corridor_result.json
+```
+
+## Current proof commands
+
+```bash
+python corridor_cli.py financial
+python corridor_cli.py financial --compact
+python CORRIDOR_STANDING_ENGINE.py
+python test_corridor_standing.py
 ```
 
 ## Protection stack complete
@@ -48,10 +75,15 @@ PROTECTED_SCOPE.md
 SECURITY.md
 ```
 
-## Active public lanes
+## Active public proof lane
 
 ```text
 financial_settlement_corridor
+```
+
+## Public lanes reserved for future proof admission
+
+```text
 regulated_data_transfer_corridor
 ai_action_corridor
 energy_transfer_corridor
@@ -65,14 +97,19 @@ extreme_field_transfer_corridor
 
 This lane is controlled-review only and is not an active public proof surface.
 
-## Current category guarantee
+## Current proof guarantee
 
 ```text
-valid endpoints do not prove valid transfer
+valid source endpoint does not prove valid transfer
+valid destination endpoint does not prove valid transfer
 endpoint standing is necessary but not sufficient
 transfer-relation standing must be resolved
 closure standing is part of admissibility
-unsafe corridors fail closed
+unsafe transfer relation is refused
+unsafe payload/relation is quarantined
+irreversible corridor effect path halts
+rebound returns to last admissible corridor posture
+receipt/replay is deterministic
 ```
 
 ## What this is not
@@ -104,6 +141,8 @@ safe formulas
 synthetic scenario map
 reviewer-facing explanation
 protected-scope notices
+public-safe executable proof
+receipt/replay demonstration
 ```
 
 Controlled review only:
@@ -122,11 +161,10 @@ commercial pilot terms
 ## Next development lanes
 
 ```text
-1. add public-safe reviewer brief
-2. add first synthetic financial settlement corridor proof
-3. add first synthetic regulated data transfer corridor proof
-4. add minimal CLI only after proof model is stable
-5. add tests only after proof model is stable
+1. add RELEASE_NOTES.md for v0.1 public proof surface
+2. add regulated data transfer corridor proof only if needed
+3. add AI action corridor proof only if needed
+4. keep extreme-field transfer as controlled-review only
 ```
 
 ## Category statement
