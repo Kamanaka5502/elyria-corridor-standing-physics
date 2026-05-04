@@ -1,0 +1,66 @@
+{
+  "built_by": "Elyria Systems — VA",
+  "engine": "Elyria Corridor Standing Engine",
+  "request": {
+    "corridor_id": "FIN-SETTLE-CORRIDOR-VA-001",
+    "destination_boundary": "synthetic_receiver_account_boundary",
+    "domain": "financial_settlement_corridor",
+    "protected_effect": "settlement_transfer",
+    "requested_transfer": "execute_financial_settlement_transfer",
+    "source_boundary": "synthetic_sender_account_boundary"
+  },
+  "resolution": {
+    "allowed": [
+      "corridor_audit_snapshot"
+    ],
+    "decision": "REFUSE_NARROW_QUARANTINE_ESCALATE_REBOUND",
+    "escalated": [
+      "corridor_authority_review"
+    ],
+    "halted": [
+      "irreversible_corridor_effect_path"
+    ],
+    "narrowed": [
+      "review_only_corridor_scope"
+    ],
+    "quarantined": [
+      "transfer_payload_or_relation"
+    ],
+    "reasons": [
+      "transfer relation lacks standing",
+      "transfer continuity incomplete",
+      "consequence debt exceeds admissible bound",
+      "authority validity degraded at transfer",
+      "closure standing incomplete"
+    ],
+    "rebound": [
+      "last_admissible_corridor_posture"
+    ],
+    "receipt": {
+      "decision_hash": "public-sample-recompute-by-running-python-corridor-cli-py-financial",
+      "law_hash": "public-sample-recompute-by-running-python-corridor-cli-py-financial",
+      "replay_token": "public-sample-recompute-by-running-python-corridor-cli-py-financial",
+      "request_hash": "public-sample-recompute-by-running-python-corridor-cli-py-financial",
+      "standing_vector_hash": "public-sample-recompute-by-running-python-corridor-cli-py-financial"
+    },
+    "refused": [
+      "execute_financial_settlement_transfer"
+    ],
+    "standing_margin": -0.13
+  },
+  "scenario": "financial_settlement_corridor_under_degraded_transfer_relation",
+  "standing_vector": {
+    "authority_validity": 0.49,
+    "causal_admissibility": 0.61,
+    "closure_standing": 0.41,
+    "debt_bound": 0.46,
+    "destination_standing": 0.84,
+    "phase_coherence": 0.55,
+    "ramp_lawfulity": 0.62,
+    "replayability": 0.93,
+    "source_standing": 0.82,
+    "stability_bound": 0.58,
+    "transfer_continuity": 0.44,
+    "transfer_relation": 0.37
+  }
+}
