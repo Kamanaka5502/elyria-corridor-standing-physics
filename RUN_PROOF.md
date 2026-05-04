@@ -33,7 +33,14 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-## Run the proof
+## Official CLI proof command
+
+```bash
+python corridor_cli.py financial
+python corridor_cli.py financial --compact
+```
+
+## Direct proof command
 
 ```bash
 python CORRIDOR_STANDING_ENGINE.py
@@ -94,7 +101,7 @@ The repository includes a proof workflow:
 .github/workflows/proof.yml
 ```
 
-It runs the public proof engine and deterministic test suite on push, pull request, and manual dispatch.
+It runs the public proof CLI, proof engine, and deterministic test suite on push, pull request, and manual dispatch.
 
 ## Proof principle
 
