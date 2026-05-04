@@ -5,6 +5,7 @@
 ![Owner](https://img.shields.io/badge/owner-Samantha_Revita_%2B_Terry_Snyder-purple)
 ![System](https://img.shields.io/badge/system-Elyria_Systems--VA-cyan)
 ![Standing](https://img.shields.io/badge/core-corridor_standing-green)
+[![Corridor Standing Proof](https://github.com/Kamanaka5502/elyria-corridor-standing-physics/actions/workflows/proof.yml/badge.svg)](https://github.com/Kamanaka5502/elyria-corridor-standing-physics/actions/workflows/proof.yml)
 
 Built by **Elyria Systems — VA**.
 
@@ -39,6 +40,34 @@ debt bounds
 authority ordering
 non-singular closure
 receipt / replay
+```
+
+## Runnable public proof
+
+The first admitted public proof is a synthetic financial settlement corridor.
+
+It demonstrates that valid source and destination boundaries do not admit transfer when the transfer relation and closure standing are degraded.
+
+Run:
+
+```bash
+python CORRIDOR_STANDING_ENGINE.py
+python test_corridor_standing.py
+```
+
+Expected decision:
+
+```text
+REFUSE_NARROW_QUARANTINE_ESCALATE_REBOUND
+```
+
+See:
+
+```text
+RUN_PROOF.md
+REVIEWER_BRIEF.md
+CORRIDOR_STANDING_LAW.md
+SCENARIO_INDEX.md
 ```
 
 ## Compression
