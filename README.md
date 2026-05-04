@@ -1,10 +1,18 @@
 # Elyria Corridor Standing Physics
 
+![Status](https://img.shields.io/badge/status-protected_public_proof_surface-blue)
+![Open Source](https://img.shields.io/badge/open_source-no-red)
+![Owner](https://img.shields.io/badge/owner-Samantha_Revita_%2B_Terry_Snyder-purple)
+![System](https://img.shields.io/badge/system-Elyria_Systems--VA-cyan)
+![Standing](https://img.shields.io/badge/core-corridor_standing-green)
+
 Built by **Elyria Systems — VA**.
 
 Copyright (c) 2026 **Samantha Revita** and **Terry Snyder**. All rights reserved.
 
 This repository is a **protected public proof surface**. It is **not open source**.
+
+![Elyria Corridor Standing Physics](assets/corridor_standing_front_surface.svg)
 
 ## Core Rule
 
