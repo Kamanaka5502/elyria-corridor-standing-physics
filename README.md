@@ -13,7 +13,7 @@ Copyright (c) 2026 **Samantha Revita** and **Terry Snyder**. All rights reserved
 
 This repository is a **protected public proof surface**. It is **not open source**.
 
-![Elyria Corridor Standing Physics](assets/corridor_standing_front_surface.svg)
+![Elyria Corridor Standing Physics](assets/repo_identity_hero.svg)
 
 ## Core Rule
 
